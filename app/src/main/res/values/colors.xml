@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorExpressBg">#F04639</color>
+
+    <color name="colorButtonGreen">#8BC34A</color>
+    <color name="colorButtonRed">#F04639</color>
+    <color name="colorButtonGrey">#7E7878</color>
+    <color name="red">#fe0000</color>
+    <color name="finish_button_blue">#27ae5f</color>
+    <color name="step_button_blue">#25c1e9</color>
+
+</resources>

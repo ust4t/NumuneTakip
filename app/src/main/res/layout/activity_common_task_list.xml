@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".designer.tasklist.TaskListActivity" >
+
+    <Switch
+        android:id="@+id/isTodaySwitch"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#C4C4C4"
+        android:checked="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/task_list_today" />
+
+    <Switch
+        android:id="@+id/isCompletedSwitch"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#C4C4C4"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/task_list_completed" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/taskRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#008F1E1E" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

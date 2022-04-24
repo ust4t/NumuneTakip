@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_pending_task"
+        android:icon="@drawable/ic_merge_type"
+        android:orderInCategory="100"
+        android:title="@string/logout_button"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        android:title="@string/logout_button"/>
+
+    <item
+        android:id="@+id/action_new_task"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_add_circle_outline_black_24dp"
+        android:title="@string/logout_button"/>
+
+</menu>

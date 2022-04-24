@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".designer.taskform.TaskFormActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="35dp"
+            android:paddingTop="20dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="30dp">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/modelRefEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/model_ref"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/model_ref" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/modelNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/model_name"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/model_name" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/materialRefEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/material_ref"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/material_ref" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/materialNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/material_name"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/material_name" />
+
+            <Spinner
+                android:id="@+id/spnModelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/quantityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/task_quantity"
+                android:inputType="numberDecimal"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/task_quantity" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/task_description"
+                android:inputType="textMultiLine"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelText="@string/task_description" />
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/productTypeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_enableErrorLabel="false"
+                app:ms_enableFloatingLabel="true"
+                app:ms_floatingLabelText="@string/product_type"
+                app:ms_hint="@string/product_type" />
+
+            <Switch
+                android:id="@+id/outsourceSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/outsourced" />
+
+            <Switch
+                android:id="@+id/expressSwitch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/is_express" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/row_image"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@color/colorAccent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@color/ef_grey" />
+
+                <Button
+                    android:id="@+id/btnFileUpload"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Dosya Seçin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/row_image"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/imageButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/camera_button"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/row_image"
+                    app:layout_constraintTop_toBottomOf="@+id/btnFileUpload" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/createButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/task_create" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

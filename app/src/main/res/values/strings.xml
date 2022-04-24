@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">B Tex</string>
+
+    <string name="logout_button">Çıkış yap</string>
+
+    <string name="designer_task_list">Numune Listesi</string>
+    <string name="designer_task_form">Yeni numune</string>
+
+    <string name="username_hint">Kullanıcı Adı</string>
+    <string name="password_hint">Şifre</string>
+    <string name="login_button">Giriş</string>
+    <string name="login_laoding">Giriş yapılıyor...</string>
+    <string name="login_fail_title">Başarısız</string>
+    <string name="login_fail_message">Giriş yapılamadı. Sistem yöneticisine başvurun.</string>
+
+    <string name="login_fail_admin_title">Admin girişi</string>
+    <string name="login_fail_admin_msg">Admin girişi için paneli kullanın.</string>
+
+    <string name="model_ref">Model referansı</string>
+    <string name="model_name">Model ismi</string>
+    <string name="material_ref">Kumaş referansı</string>
+    <string name="material_name">Kumaş ismi</string>
+    <string name="task_quantity">Miktar</string>
+    <string name="task_description">Açıklama</string>
+    <string name="product_type">Ürün Grubu</string>
+    <string name="is_express">Express ürün</string>
+    <string name="outsourced">Dış İşlem</string>
+    <string name="camera_button">Fotoğraf Seç</string>
+    <string name="image_selection_title">Seçmek istediğiniz resme tıklayın.</string>
+    <string name="task_create">Oluştur</string>
+    <string name="task_update">Güncelle</string>
+    <string name="task_form_loading">Yükleniyor...</string>
+
+    <string name="task_succ_title">Başarılı</string>
+    <string name="task_succ_message">\'%d\' referans numarasına sahip numune başarı ile oluşturuldu. \'%s\' isimli kullanıcıya atandı.</string>
+    <string name="task_succ_update_msg">Başarı ile güncellendi.</string>
+
+    <string name="task_fail_title">Başarısız</string>
+    <string name="task_fail_message">Numune yaratılırken hata ile karşılaşıldı. Sistem yöneticisine başvurun.</string>
+    <string name="task_fail_update_msg">Numune güncellenirken hata ile karşılaşıldı. Sistem yöneticisine başvurun.</string>
+
+    <string name="task_list_today">Bugün yaratılan numuneler</string>
+    <string name="task_list_completed">Tamamlanmış numuneler</string>
+
+    <string name="task_detail_loading">Numune bilgileri yükleniyor.</string>
+
+    <string name="task_detail_model">Model</string>
+    <string name="task_detail_material">Kumaş</string>
+    <string name="task_detail_quantity">Miktar</string>
+    <string name="task_detail_description">Açıklama</string>
+    <string name="task_detail_product_detail">Ürün grubu</string>
+
+    <string name="task_detail_error_title">Hata</string>
+    <string name="task_detail_error_msg">Numune özelliklerine ulaşırken hata ile karşılaşıldı. Sistem yöneticisine başvurun.</string>
+
+    <string name="task_detail_end_title">Numuneyi bitir.</string>
+    <string name="task_detail_end_msg">Bu numune ile işleminizi bitirmek üzeresiniz.</string>
+
+    <string name="task_detail_extra_title">Sayaç bitti</string>
+    <string name="task_detail_extra_msg">Ekstra süre istiyorsanız dakika cinsinden lütfen giriniz.</string>
+
+    <string name="task_detail_extra_positive">Ekstra süre ekle</string>
+    <string name="task_detail_extra_negative">Numuneyi tamamla</string>
+
+    <string name="task_detail_extra_time_hint">Ekstra Süre</string>
+    <string name="date_text">Tarih</string>
+
+</resources>

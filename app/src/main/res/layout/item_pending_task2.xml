@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="TODO"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtModelRefName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Referansı"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtModelName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Model Adi"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtProductType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ürün Grubu : Kaban"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/_textview"
+                app:layout_constraintStart_toEndOf="@+id/_textview"
+                app:layout_constraintTop_toTopOf="@+id/_textview" />
+
+            <TextView
+                android:id="@+id/txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Adet"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/txtTaskDate"
+                app:layout_constraintTop_toBottomOf="@+id/txtTaskDate" />
+
+            <TextView
+                android:id="@+id/txtTaskDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="2019-01-01"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/imgProduct"
+                app:layout_constraintTop_toTopOf="@+id/imgProduct" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Açıklama"
+                android:textColor="@color/red"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/txtMenuAdi"
+                app:layout_constraintTop_toBottomOf="@+id/txtMenuAdi" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgTaskResult"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="TODO"
+            android:padding="10dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/txtToplamTutar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toEndOf="@+id/txtToplamTutar"
+            app:layout_constraintTop_toTopOf="@+id/txtToplamTutar"
+            app:srcCompat="@drawable/ic_waiting" />
+
+    </LinearLayout>
+
+</LinearLayout>
